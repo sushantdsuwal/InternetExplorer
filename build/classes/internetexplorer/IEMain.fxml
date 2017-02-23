@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="622.0" prefWidth="909.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="internetexplorer.IEMainController">
+    <children>
+        <TabPane onMouseClicked="#doThisOnMuse" prefHeight="622.0" prefWidth="909.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+            <tabs>
+                <Tab text="Untitled Tab 1">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <WebView fx:id="viewer" layoutX="20.0" layoutY="61.0" prefHeight="519.0" prefWidth="870.0" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="60.0" />
+                                <ProgressBar fx:id="progress" layoutX="691.0" layoutY="557.0" prefWidth="300.0" progress="0.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+        <AnchorPane prefHeight="45.0" prefWidth="200.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="40.0">
+            <children>
+                <Button fx:id="btnBack" mnemonicParsing="false" onAction="#doPrevious" text="Previous" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                <Button fx:id="btnNext" mnemonicParsing="false" onAction="#doNext" text="Next" AnchorPane.leftAnchor="75.0" AnchorPane.topAnchor="10.0" />
+                <Button fx:id="btnRefresh" mnemonicParsing="false" onAction="#dorefresh" text="Refresh" AnchorPane.leftAnchor="125.0" AnchorPane.topAnchor="10.0" />
+                <TextField fx:id="addBar" onAction="#doBtnGo" prefHeight="25.0" prefWidth="626.0" promptText="website" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="10.0" />
+                <Button fx:id="btnGo" mnemonicParsing="false" onAction="#doBtnGo" text="Go" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
